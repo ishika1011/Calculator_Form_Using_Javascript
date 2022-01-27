@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <title>Calculator</title>
+      <link href="./assets/library/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
+   </head>
+   <body>
+      <section class="calculator">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <form class="form-main">
+                     <h2 class="form-title">Calculator</h2>
+                     <input class="form-entities" type="text" id="value1"name="username" placeholder="Value1">
+                     <input class="form-entities" type="text" id="value2"name="email" placeholder="value2">
+                     <select class="form-entities" name="operation" id="result">
+                        <option value="add">Addition</option>
+                        <option value="minus">Subtraction</option>
+                        <option value="multiply">Multiplication</option>
+                        <option value="divide">Division</option>
+                        <option value="mod">Modulo</option>
+                     </select>
+                     <button class="btn form-btn" type="button" onClick="calc()" value="Calculate" id="result">Calculate</button>
+                  </form>
+               </div>
+               <div class="col-md-6">
+                  <div class="show-result">
+                     <h1 class="result-main center-block">Result</h1>
+                     <h2 id="main-result"></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="./assets/js/main.js"></script>
+   </body>
+</html>
